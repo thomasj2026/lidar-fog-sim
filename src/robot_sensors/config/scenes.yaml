@@ -1,0 +1,21 @@
+# Scenes created for the Python model (map)
+scenes:
+  wall:                       # single flat wall: rank-deficient information (observability)
+    walls:
+      - {a: [4.0, -30.0], b: [4.0, 30.0], rho: 0.8}
+
+  corner:                     # two non-parallel walls: full-rank information
+    walls:
+      - {a: [4.0, -8.0], b: [4.0, 3.0], rho: 0.8}      # x = 4, free side -x
+      - {a: [4.0, 3.0], b: [-8.0, 3.0], rho: 0.8}      # y = 3, free side -y
+
+  clutter:                    # 10 m x 10 m room with three obstacles (occlusion, reflectivity)
+    walls:
+      - {a: [-5.0, -5.0], b: [5.0, -5.0], rho: 0.8}
+      - {a: [5.0, -5.0], b: [5.0, 5.0], rho: 0.8}
+      - {a: [5.0, 5.0], b: [-5.0, 5.0], rho: 0.8}
+      - {a: [-5.0, 5.0], b: [-5.0, -5.0], rho: 0.8}
+    boxes:
+      - {center: [2.0, 0.5], size: [0.8, 1.6], yaw: 0.0, rho: 0.8}
+      - {center: [-1.5, 2.5], size: [1.0, 1.0], yaw: 0.6, rho: 0.15}   # dark target
+      - {center: [-2.0, -2.5], size: [0.6, 0.6], yaw: 0.0, rho: 0.5}

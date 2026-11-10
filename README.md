@@ -18,8 +18,8 @@ comes from the same ray geometry:
 Developed for MAE 5810 Robot Perception (Cornell) as the midterm project.
 
 <p align="center">
-  <img src="results/fig_scan_clutter.png" width="40%" alt="Simulated scan of a cluttered room in clear air and fog">
-  <img src="results/fig_fov.png" width="45%" alt="Probability of observing a dark target from two poses, with and without fog">
+  <img src="src/robot_sensors/results/fig_scan_clutter.png" width="40%" alt="Simulated scan of a cluttered room in clear air and fog">
+  <img src="src/robot_sensors/results/fig_fov.png" width="45%" alt="Probability of observing a dark target from two poses, with and without fog">
 </p>
 
 ---
@@ -202,8 +202,8 @@ The range limits resemble a low-cost 2-D scanner (RPLIDAR A1); the other values 
 | E8 | Position CRB map over the room | most precise near corners; fog hurts most where walls are far |
 
 <p align="center">
-  <img src="robot_sensors/results/fig_mc_per_beam.png" width="48%" alt="Model vs Monte Carlo dropout and noise">
-  <img src="robot_sensors/results/fig_crb_vs_estimator.png" width="48%" alt="Estimator spread vs Cramér–Rao bound">
+  <img src="src/robot_sensors/results/fig_mc_per_beam.png" width="48%" alt="Model vs Monte Carlo dropout and noise">
+  <img src="src/robot_sensors/results/fig_crb_vs_estimator.png" width="48%" alt="Estimator spread vs Cramér–Rao bound">
 </p>
 
 ### Analytical results (proven from the model, confirmed in simulation)
